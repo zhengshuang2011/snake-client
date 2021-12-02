@@ -10,10 +10,11 @@ const setupInput = function (conn) {
   stdin.setEncoding("utf8");
   stdin.resume();
 
-  stdin.on("data", handleUserInput);
+  stdin.on("data", (key) => handleUserInput(key));
 
   return stdin;
 };
+
 const handleUserInput = (key) => {
   if (key === "\u0003") {
     console.log("Exiting");
