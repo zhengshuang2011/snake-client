@@ -15,25 +15,6 @@ const connect = function () {
     conn.write("Name: ZM");
   });
 
-  // conn.on("connect", () => {
-  //   // conn.write("Move: up");
-  //   //   setTimeout(() => {
-  //   //     conn.write("Move: up");
-  //   //   }, 50);
-  //   //   setTimeout(() => {
-  //   //     conn.write("Move: up");
-  //   //   }, 100);
-  //   //   setTimeout(() => {
-  //   //     conn.write("Move: up");
-  //   //   }, 150);
-  //   //   setTimeout(() => {
-  //   //     conn.write("Move: up");
-  //   //   }, 200);
-  //   // setInterval(() => {
-  //   //   conn.write("Move: up");
-  //   // }, 50);
-  // });
-
   return conn;
 };
 
